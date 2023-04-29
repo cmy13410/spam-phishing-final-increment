@@ -69,4 +69,5 @@ km.fit(X)
 # predict the cluster for each data point
 y_cluster_kmeans = km.predict(X)
 score = metrics.silhouette_score(X, y_cluster_kmeans)
-print(score)
+print("K-Means Result: ")
+print("Silhouette Score of K-Means: ", score)
